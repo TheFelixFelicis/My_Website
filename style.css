@@ -1,31 +1,26 @@
 /* 
-   PROFESSIONAL MINIMALIST DESIGN SYSTEM 
-   Clean | Editorial | Sophisticated
+   Clean & Aesthetic Website CSS Look
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-    /* Color Palette - Subtle & Professional */
+    /* primary colors */
     --bg-body: #f9fafb;
-    /* Very soft off-white */
     --bg-card: #ffffff;
     --text-primary: #1a202c;
-    /* Deep Charcoal */
     --text-secondary: #4a5568;
-    /* Slate Grey */
     --accent-color: #2c5282;
-    /* Classic Navy Blue */
     --border-color: #e2e8f0;
 
-    /* Spacing & Layout */
+    /* spacing & layout */
     --container-width: 800px;
-    /* Tighter reading width */
+    /* tighter reading width */
     --header-height: 80px;
     --radius-sm: 4px;
 }
 
-/* 1. GLOBAL RESET & BASE STYLES */
+/* base styles */
 *,
 *::before,
 *::after {
@@ -44,7 +39,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* 2. NAVIGATION BAR */
+/* 2. navigation bar */
 nav {
     background-color: #ffffff;
     /* this was a previous issue background: var(--bg-card);*/
@@ -78,16 +73,16 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* 3. CONTAINER & LAYOUT */
+/* container & layout */
 .container {
     max-width: var(--container-width);
     margin: 60px auto;
     padding: 0 20px;
     background: transparent;
-    /* No card background for main container */
+    /* no card background for main container */
 }
 
-/* 4. TYPOGRAPHY */
+/* typography */
 h1,
 h2,
 h3 {
@@ -125,7 +120,7 @@ strong {
     font-weight: 600;
 }
 
-/* 5. LINKS & BUTTONS */
+/* links & buttons */
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -136,7 +131,7 @@ a:hover {
     opacity: 0.8;
 }
 
-/* Lead Text for Intro */
+/* lead text for intro */
 .lead {
     font-size: 1.35rem;
     font-weight: 400;
@@ -147,7 +142,7 @@ a:hover {
     font-style: italic;
 }
 
-/* Button Style Class (for index.html) */
+/* button style class (for index.html) */
 .btn-primary {
     display: inline-block;
     padding: 14px 32px;
@@ -167,28 +162,28 @@ a:hover {
     opacity: 1;
 }
 
-/* Secondary Button (Ghost/Outline Style) */
+/* secondary button (ghost style) */
 .btn-secondary {
     display: inline-block;
     padding: 14px 32px;
     background-color: transparent;
-    color: var(--text-primary) !important; /* Dark Text */
-    border: 1px solid var(--text-primary); /* Dark Border */
+    color: var(--text-primary) !important; /* dark text */
+    border: 1px solid var(--text-primary); /* dark border */
     border-radius: var(--radius-sm);
     font-weight: 500;
     letter-spacing: 0.5px;
     margin-top: 20px;
-    margin-right: 15px; /* Adds space if placed next to another button */
+    margin-right: 15px; /* adds space if placed next to another button */
     transition: all 0.2s ease;
 }
 
 .btn-secondary:hover {
-    background-color: var(--border-color); /* Subtle grey background on hover */
+    background-color: var(--border-color); 
     color: var(--text-primary) !important;
     border-color: var(--text-secondary);
 }
 
-/* 6. LISTS */
+/* lists */
 ul {
     list-style-position: outside;
     margin-left: 1.5rem;
@@ -200,7 +195,7 @@ li {
     color: var(--text-secondary);
 }
 
-/* 7. MEDIA */
+/* media */
 img,
 iframe {
     max-width: 100%;
@@ -211,7 +206,7 @@ iframe {
     background: white;
 }
 
-/* Responsive */
+/* responsive */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
